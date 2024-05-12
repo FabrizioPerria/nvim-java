@@ -11,6 +11,7 @@ local runner_api = require('java.api.runner')
 local settings_api = require('java.api.settings')
 local profile_ui = require('java.ui.profile')
 
+local neotest_jdtls = require('java.api.neotest')
 local global_config = require('java.config')
 
 local M = {}
@@ -107,6 +108,7 @@ M.runner.built_in.switch_app = runner_api.built_in.switch_app
 ----------------------------------------------------------------------
 M.profile = {}
 M.profile.ui = profile_ui.ui
+M.neotest_adapter = neotest_jdtls
 
 ----------------------------------------------------------------------
 --                             Settings                             --
